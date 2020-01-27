@@ -1,0 +1,118 @@
+baseurl = "https://www.brunopma.com"
+title = "Bruno Perez"
+
+theme = "hugo-coder"
+
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "yourdiscussshortname"
+
+[params]
+    author = "Bruno Perez"
+    description = "Bruno Perez's personal website"
+    keywords = "developer,personal"
+    info = """
+        DevOps Engineer @ <a href="https://www.cesar.org.br/">CESAR</a><br/>
+    """
+    avatarurl = "images/avatar.jpg"
+
+    dateformat = "January 2, 2006"
+
+    hideCredits = false
+    hideCopyright = false
+    since = 2020
+
+
+    rtl = false
+
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorscheme = "dark"
+
+    # Series see also post count
+    maxSeeAlsoItems = 5
+
+    # Custom CSS
+    custom_css = []
+    
+    # Custom JS
+    custom_js = []
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 2
+    url = "https://www.linkedin.com/in/bperezdemoura/"
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github"
+    weight = 1
+    url = "https://github.com/brunopma/"
+[[params.social]]
+    name = "Mail"
+    icon = "fas fa-envelope"
+    weight = 3
+    url = "mailto:bperezdemoura@gmail.com"
+[[params.social]]
+    name = "Whatsapp"
+    icon = "fab fa-whatsapp"
+    weight = 4
+    url = "https://api.whatsapp.com/send?phone==5581992042432"
+
+
+[languages]
+    [languages.en]
+        languagename = "English"
+
+        [languages.en.menu]
+
+            [[languages.en.menu.main]]
+            name = "About"
+            weight = 1
+            url = "about/"
+
+            #[[languages.en.menu.main]]
+            #name = "Projects"
+            #weight = 3
+            #url = "projects/"
+
+
+    [languages.pt-br]
+        languagename = "Português"
+        title = "Bruno Perez"
+
+        [languages.pt-br.params]
+            author = "Bruno Perez"
+            info = """
+                Engenheiro DevOps no <a href="https://www.cesar.org.br/">CESAR</a><br/>
+            """
+            description = "Site pessoal de Bruno Perez"
+            keywords = "desenvolvedor,pessoal"
+
+        [languages.pt-br.menu]
+
+            [[languages.pt-br.menu.main]]
+            name = "Sobre"
+            weight = 1
+            url = "about/"
+
+            #[[languages.pt-br.menu.main]]
+            #name = "Projetos"
+            #weight = 3
+            #url = "projects/"
